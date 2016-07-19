@@ -1,9 +1,46 @@
 <h1>
   {{title}}
 </h1>
+<div>
 
+
+</div>
 <ul>
-  <li *ngFor="let game of games">
-    {{game.title}}
+  <h2>100</h2>
+  <li *ngFor="let game of games | groupBy : 90 | lessThan : 100 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
   </li>
+  <h2>90</h2>
+  <li *ngFor="let game of games | groupBy : 80 | lessThan : 90 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+  <h2>80</h2>
+  <li *ngFor="let game of games | groupBy : 70 | lessThan : 80 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+  <h2>70</h2>
+  <li *ngFor="let game of games | groupBy : 60 | lessThan : 70 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+  <h2>60</h2>
+  <li *ngFor="let game of games | groupBy : 50 | lessThan : 60 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+  <h2>50</h2>
+  <li *ngFor="let game of games | groupBy : 40 | lessThan : 50 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+  <h2>40</h2>
+  <li *ngFor="let game of games | groupBy : 30 | lessThan : 40 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+  <h2>30</h2>
+  <li *ngFor="let game of games | groupBy : 20 | lessThan : 30 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+  <h2>20</h2>
+  <li *ngFor="let game of games | groupBy : 10 | lessThan : 20 | orderBy : '-metacriticScore'">
+    {{game.title}}  | {{game.metacriticScore}}
+  </li>
+
 </ul>
