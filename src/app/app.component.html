@@ -22,25 +22,4 @@
   <li *ngFor="let game of games | groupBy : 60 | lessThan : 70 | orderBy : '-metacriticScore'">
     {{game.title}}  | {{game.metacriticScore}}
   </li>
-  <h2>60</h2>
-  <li *ngFor="let game of games | groupBy : 50 | lessThan : 60 | orderBy : '-metacriticScore'">
-    {{game.title}}  | {{game.metacriticScore}}
-  </li>
-  <h2>50</h2>
-  <li *ngFor="let game of games | groupBy : 40 | lessThan : 50 | orderBy : '-metacriticScore'">
-    {{game.title}}  | {{game.metacriticScore}}
-  </li>
-  <h2>40</h2>
-  <li *ngFor="let game of games | groupBy : 30 | lessThan : 40 | orderBy : '-metacriticScore'">
-    {{game.title}}  | {{game.metacriticScore}}
-  </li>
-  <h2>30</h2>
-  <li *ngFor="let game of games | groupBy : 20 | lessThan : 30 | orderBy : '-metacriticScore'">
-    {{game.title}}  | {{game.metacriticScore}}
-  </li>
-  <h2>20</h2>
-  <li *ngFor="let game of games | groupBy : 10 | lessThan : 20 | orderBy : '-metacriticScore'">
-    {{game.title}}  | {{game.metacriticScore}}
-  </li>
-
 </ul>
